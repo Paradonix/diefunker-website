@@ -1,0 +1,101 @@
+.quote {
+    position: relative;
+}
+
+.quote p {
+    font-family: "Utopia-italic";
+    font-size: 20px;
+    font-weight: 700px;
+    left: -50px;
+}
+
+.right:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    left: -40px;
+    content:"\f10d";
+    font-size: 100px;
+    color: rgba(0,0,0,0.1);
+}
+
+.left:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    right: -40px;
+    content:"\f10d";
+    font-size: 100px;
+    color: rgba(0,0,0,0.1);
+}
+
+.right::after {
+    content: "";
+    top: 20px;
+    left: 34%;
+    position: absolute;
+    border-bottom: 3px solid black;
+    height: 3px;
+    width: 200px;
+}
+
+.left::after {
+    content: "";
+    top: 20px;
+    left: 25%;
+    position: absolute;
+    border-bottom: 3px solid black;
+    height: 3px;
+    width: 200px;
+}
+
+.row img {
+    width: 100px;
+    margin-top: 16px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.right {
+    float: left;
+    padding: 40px 0 40px 80px;
+}
+
+.left {
+    float: right;
+    padding: 40px 80px 40px 0;
+}
+
+.img-right {
+    float: right;
+}
+
+.img-left {
+    float: left;
+}
+
+.row {
+    width: 100%;
+    height: 145px;
+}
+
+input {
+    width: 31%;
+    height: 30px;
+    padding: 0 15px;
+    margin: 10px;
+    margin-top: 50px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    background-color: #F6F6F6;
+    float: left;
+    font-family: arial;
+}
+
+#addNewBtn {
+    margin: 20px 0;
+}
+
+form {
+    text-align: center;
+}

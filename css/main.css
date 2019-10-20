@@ -1,0 +1,391 @@
+html {
+    font-family: sans-serif;
+    overflow-y: scroll;
+    height: 99%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 200px;
+    min-height: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .submitBtn {
+        display: none;
+    }
+}
+
+.submitBtn {
+    cursor: pointer;
+    height:30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    margin-left: 8px;
+    text-align: center;
+    transition: .3s ease;
+    color: white;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.submitBtn a {
+    color: white;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.submitBtn:hover {
+    background-color: #555;
+    transition: .3s ease;
+}
+
+#loginBtn {
+    margin-top: 51px;
+    margin-left: 20px;
+    float: right;
+}
+
+.logoutForm {
+    float: right;
+}
+
+#logoutBtn {
+    margin-top: 51px;
+    margin-left: 20px;
+}
+
+.saveBtn {
+    float: right;
+    margin-top: 35px;
+}
+
+.navbar_logo .submitBtn {
+    margin: 0 0 0 20px;
+}
+
+p {
+    color: #424242;
+    margin: 5px 0;
+    line-height: 23px;
+}
+
+ol {
+    color: #424242;
+}
+
+.wrapper {
+    width: 60vw;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.guild_image img {
+    margin: 40px 0 0 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.navbar_logo img {
+    vertical-align: middle;
+    width: 100px;
+    padding: 0;
+}
+
+.logo_text {
+    margin: 14px;
+    font-family: 'Bowlby One', cursive, sans-serif;
+    font-size: 19px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Font Awesome';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu > ol {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.menu > ol > li {
+    border-left: 5px solid var(--gradient-color);
+    margin-bottom: 1px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu > ol .sub-menu {
+    margin-left: 22.5px;
+    list-style: none;
+    max-height: 0px;
+    overflow: hidden;
+    padding-left: 7.5px;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.menu > ol > li a {
+    color: black;
+    display: block;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.menu > ol > li:focus-within a:before {
+    transform: rotate(-180deg);
+}
+
+.menu > ol > li:focus-within,
+.menu > ol > li:hover {
+    z-index: 100;
+}
+
+a:focus {
+    outline: none;
+    position: relative;
+}
+a:focus:after {
+    width: 50px;
+}
+.menu a:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 5px;
+    height: 1px;
+    width: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.menu > ol .sub-menu li a:after {
+  bottom: 5px;
+  height: 1px;
+}
+
+.menu > ol > li:hover a:before {
+    transform: rotate(-180deg);
+}
+
+label {
+    background-image: url(../images/menu.png);
+    display: block;
+    cursor: pointer;
+    float: right;
+    background-size: auto 100%;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin: 52px 0 0;
+}
+
+.menu-wrapper input {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu a:hover {
+        font-weight: 600;
+    }
+
+    .menu li {
+        max-height: 0;
+        display: none;
+    }
+
+    input:checked ~ .menu li {
+        max-height: 100%;
+        display: block;
+    }
+
+    .menu-expanded {
+        height: 450px !important;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .wrapper {width: 95vw;}
+}
+
+.menu > ol > li a:not(:last-child):before {
+    font-family: "Font Awesome";
+    font-size: 0.75em;
+    line-height: 50px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: -2px;
+    transition: 0.5s;
+}
+
+@media (min-width: 1001px) {
+    h1 {
+        text-align: center;
+    }
+
+    .menu > ol > li a:not(:last-child):before {
+        content: "\f078";
+        font-family: "Font Awesome";
+        font-size: 0.75em;
+        line-height: 50px;
+        position: absolute;
+        right: 25px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        margin-top: -2px;
+        transition: 0.5s;
+    }
+
+    .menu {
+        margin-top: 11px;
+        float: right;
+        height: 150px;
+    }
+    .menu-wrapper {
+        height: 180px;
+    }
+    .menu > ol {
+        display: block;
+        max-width: none;
+        text-align: center;
+    }
+    .menu > ol > li {
+        border-top: 5px solid var(--accent-color);
+        border-left: 0;
+        display: inline-block;
+        margin-left: -5px;
+        vertical-align: top;
+        padding: 0 5px 0 0;
+        font-size: 16px
+    }
+    .menu > ol > li a:not(:last-child):before {
+        right: 5px;
+    }
+
+    .menu > ol > li:hover:after,
+    .menu > ol > li:focus:after,
+    .menu > ol > li:focus-within:after {
+        background: linear-gradient(to bottom, var(--accent-color), var(--gradient-color));
+        border-radius: 3px;
+        top: -15px;
+        bottom: -15px;
+        left: -15px;
+        right: -15px;
+    }
+    .menu > ol .sub-menu {
+        border-left: 0;
+        margin: 0 -15px -15px;
+        padding-left: 10px;
+    }
+    a:focus,
+    a:hover {
+        position: relative;
+    }
+    a:focus:after,
+    a:hover:after {
+        width: 50px;
+    }
+    a:after {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .menu > ol > li:focus .sub-menu,
+    .menu > ol > li:focus-within .sub-menu {
+        max-height: 500px;
+    }
+    .menu > ol > li:hover .sub-menu {
+        max-height: 150px;
+        transition: 0.5s;
+    }
+
+    .dropdown a{
+        margin-left: -20px;
+    }
+
+    label {
+        display: none;
+    }
+
+    .footer-content {
+        padding: 50px 20vw 0 20vw;
+    }
+
+    .social-media img {
+        float: left;
+        margin-top: -12px !important;
+    }
+
+    .footer-right {
+        float: right;
+        margin-top: -16px
+    }
+}
+
+.bold {
+    font-weight: 600;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    margin-top: 100px;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #232323;
+    color: white;
+}
+
+.social-media img {
+    width: 38px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-right {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.main_footer {
+    position: fixed;
+    margin: 0 !important;
+    bottom: 30px;
+}

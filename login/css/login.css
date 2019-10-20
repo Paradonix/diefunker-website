@@ -1,0 +1,30 @@
+h2 {
+    color: red;
+    font-size: 18px;
+}
+
+.success {
+    color: green;
+}
+
+.loginDiv {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    background-color: #F6F6F6;
+    float: left;
+    font-family: arial;
+}
+
+.submitBtn {
+    margin-right: 10px;
+}

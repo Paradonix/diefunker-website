@@ -1,0 +1,156 @@
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 2;
+}
+
+#overlay h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    margin-top: 50vh;
+}
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    padding: 13px 0 0 18px;
+}
+
+.center {
+    padding: 13px 0 0 10%;
+}
+
+.right {
+    padding: 13px 0 0 10%;
+}
+
+.container_top {
+    margin-top: 20px;
+    height: 450px;
+}
+
+.container_bottom {
+    height: 400px;
+}
+
+.static1_text {
+    width: 45%;
+    float: left;
+}
+
+.static2_text {
+    width: 45%;
+    float: left;
+}
+
+h1 {
+    text-align: left;
+    margin: 19px 0 15px 0;
+}
+
+.active_btn, .collapsible {
+    border-bottom-width: 2px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: #424242 !important;
+    transition: 0.3s ease;
+}
+
+.expanded {
+    height: 400px !important;
+    transition: 0.3s ease;
+}
+
+.content {
+    float: right;
+    width: 50%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #424242;
+    overflow: hidden;
+    height: 50px;
+    transition: 0.3s ease;
+}
+
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(135deg);
+    float: right;
+    transition: 0.3s ease;
+}
+
+.active_btn:hover .arrow {
+    transform: rotate(135deg);
+    margin: 0 10px 0 0;
+    transition: 0.3s ease;
+}
+
+.active_btn .arrow {
+    transform: rotate(-45deg);
+    margin: 5px 10px 0 0;
+}
+
+@media screen and (max-width: 950px) {
+    h1 {
+        text-align: center;
+    }
+
+    .static1_text, .static2_text {
+        float: none;
+        width: 100%;
+    }
+
+    .content {
+        float: none;
+        margin: 30px auto;
+        width: 475px;
+    }
+
+    .container_top {
+        height: 50%;
+    }
+
+    .container_bottom {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        width: 100%;
+    }
+}

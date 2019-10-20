@@ -1,0 +1,75 @@
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.active_btn, .collapsible {
+    border-bottom-width: 2px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: #424242 !important;
+    transition: 0.3s ease;
+}
+
+.expanded {
+    height: auto !important;
+    transition: 0.3s ease;
+}
+
+.content {
+    width: 100%;
+    border-style: solid;
+    border-width: 2px 0 2px 0;
+    border-color: #424242;
+    overflow: hidden;
+    height: 50px;
+    transition: 0.3s ease;
+    margin: 30px 0;
+}
+
+.content p {
+    margin: 10px;
+}
+
+.content li {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+ol a {
+    color: dodgerblue;
+}
+
+ol a:hover {
+    color: darkblue;
+}
+
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(135deg);
+    float: right;
+    transition: 0.3s ease;
+}
+
+.content:hover .arrow {
+    transform: rotate(-45deg);
+    margin: 5px 10px 0 0;
+    transition: 0.3s ease;
+}
+
+.active_btn .arrow {
+    transform: rotate(-45deg);
+    margin: 5px 10px 0 0;
+}

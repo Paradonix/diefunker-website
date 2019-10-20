@@ -1,0 +1,12 @@
+body {
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin: 310px 0 360px 0;
+    font-size: 50px;
+    font-weight: 800;
+    transform: rotate(20deg);
+    text-transform: uppercase;
+}
