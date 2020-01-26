@@ -1,9 +1,9 @@
 <?php
 
-    $dBServername = "localhost";
-    $dBUsername = "diefunke_root";
-    $dBPassword = "gE00eeivHz5zczWIcj";
-    $dBName = "diefunke_system";
+    $dBServername = "***********";
+    $dBUsername = "**************";
+    $dBPassword = "***************";
+    $dBName = "************";
 
     $conn = mysqli_connect($dBServername, $dBUsername, $dBPassword, $dBName);
     $conn->set_charset("utf8");
