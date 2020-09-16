@@ -26,4 +26,4 @@ Es dauerte länger als erwartet die Webseite zu erstellen, hauptsächlich aus de
 
 ## Erkenntnisse
 
-Bei diesem Projekt habe ich gemerkt, dass ich mich vor einem Projektstart mit neuen Technologien besser Informieren sollte mit weiteren möglichkeiten. Beispielsweise habe ich in diesem Projekt den Inhalt für Admins bearbeitbar gemacht mit contenteditable statt mit einem externen Admin Panel.
+Bei diesem Projekt habe ich gemerkt, dass ich mich vor einem Projektstart mit neuen Technologien besser Informieren sollte mit weiteren Möglichkeiten. Beispielsweise habe ich in diesem Projekt den Inhalt für Admins bearbeitbar gemacht mit "contenteditable" statt mit einem externen Admin Panel.
